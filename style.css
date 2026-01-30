@@ -1,3 +1,28 @@
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: aliceblue;
+}
+
+body{
+    background: #141414;
+}
+
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#menu{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#menu>li{
+    list-style: none;
+}
+
+#menu-links{
+    text-decoration: none;
 }
