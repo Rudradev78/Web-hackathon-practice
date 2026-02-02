@@ -3,26 +3,125 @@
     color: aliceblue;
 }
 
-body{
-    background: #141414;
+html{
+    display: flex;
+    justify-content: center;
 }
 
-#navbar{
+body{
+    background: #141414;
+    width: 100%;
+    height: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
+#navbar{
+    background: #141414;
+    padding: 0px 10px 0px 10px;
+    position: fixed;
+    top: 0;
+    width: 70vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+#nav-heading{
+    font-size: 25px;
+}
+
 #menu{
-    width: 30%;
+    width: 40%;
     display: flex;
     justify-content: space-around;
 }
 
 #menu>li{
+    height: 20px;
+    padding: 4px 4px;
     list-style: none;
 }
 
+#menu>li:hover{
+        border: 2px solid green;
+        border-radius: 10px;
+        background: green;
+        transition: 0.8s ease-out;
+    }
+
 #menu-links{
     text-decoration: none;
+}
+
+
+
+#first-page{
+    height: 87vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#second-page{
+    height: 96vh;
+    width: 70vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#webhack-content{
+    height: 50%;
+    width: 50%;
+    overflow-wrap: anywhere;
+    text-align: justify;
+}
+
+#webcontent>h2{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#webhack-content>h2>span{
+    display: inline-block;
+}
+
+#middle-page{
+    height: 90vh;
+    width: 90vw;
+    font-size: 30vh;
+    overflow: hidden;
+    text-wrap: nowrap;
+    font-weight: 400;
+}
+
+#middle-page h1{
+    position: absolute;
+    left: 0;
+    top: -30vh;
+}
+
+
+#cursor{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: lawngreen;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    z-index: 5;
 }
