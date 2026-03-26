@@ -59,13 +59,38 @@ document.addEventListener("mousemove",(e)=>{
     }
 });
 
+let obj = {
+    Pradip:{
+        h3:"Pradip Moharana",
+        p1:"Team Leader",
+        p2:"Documentation Manager"
+    },
+    Srusti:{
+        h3:"Srusti Saismita",
+        p1:"Team Member",
+        p2:"Representative"
+    },
+    Rudra:{
+        h3:"Rudra Narayan Mohapatra",
+        p1:"Team Member",
+        p2:"Web Developer"
+    }
+}
+
 document.querySelectorAll("#page2 a").forEach((elem) => {
     elem.addEventListener("mouseenter", () => {
-        document.getElementById("cursor").innerText = elem.id;
+        document.getElementById("cursor").innerHTML = `<section id="${elem.id}-details" class="card">
+        <img src="${elem.id}.jpg" alt="${elem.id} Image" height="200px" width="150px" style="border-radius: 10px;">
+        <div id="details">
+            <h3>${obj[elem.id].h3}</h3>
+            <p>${obj[elem.id].p1}</p>
+            <p>${obj[elem.id].p2}</p>
+        </div>
+    </section>`;
 
         gsap.to("#cursor", {
-            width: "60px",
-            height: "40px",
+            width: "400px",
+            height: "210px",
             borderRadius: "5px",
             duration: 0.3,
         });

@@ -82,3 +82,28 @@ html{
     margin-top: 70px;
     z-index: 6;
 }
+
+.card{
+    height: 210px;
+    width: 400px;
+    background: lawngreen;
+    border: 2px solid black;
+    filter: drop-shadow(2px 2px 5px #000);
+    border-radius: 10px;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#details>h3, #details>p{
+    color:#000;
+}
